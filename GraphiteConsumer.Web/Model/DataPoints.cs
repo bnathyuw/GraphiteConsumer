@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using GraphiteConsumer.Web.Extensions;
@@ -25,8 +26,11 @@ namespace GraphiteConsumer.Web.Model
 		private string BuildChart()
 		{
 			var sb = new StringBuilder();
+			var places = Math.Ceiling(Math.Log10(_points.Max() ?? 0));
+			var template = string.Format("{{0, {0}}}  ", places);
 			for (var i = _points.Max(); i >= _points.Min(); i--)
 			{
+				sb.AppendFormat(template, i);
 				foreach (var point in _points)
 				{
 					sb.Append(point >= i ? "|" : " ");
