@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphiteConsumer.Web", "Gra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphiteConsumer", "GraphiteConsumer\GraphiteConsumer.csproj", "{2C1BE8C1-A041-49C1-ADC2-5B392D1DC5B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphiteConsumer.App", "GraphiteConsumer.App\GraphiteConsumer.App.csproj", "{4FE9EF12-F495-41F6-B174-F030EC9E5096}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{2C1BE8C1-A041-49C1-ADC2-5B392D1DC5B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C1BE8C1-A041-49C1-ADC2-5B392D1DC5B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C1BE8C1-A041-49C1-ADC2-5B392D1DC5B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FE9EF12-F495-41F6-B174-F030EC9E5096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FE9EF12-F495-41F6-B174-F030EC9E5096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FE9EF12-F495-41F6-B174-F030EC9E5096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FE9EF12-F495-41F6-B174-F030EC9E5096}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
