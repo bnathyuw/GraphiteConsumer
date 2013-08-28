@@ -1,7 +1,7 @@
 using System;
 using System.Net;
 using System.Web;
-using GraphiteConsumer.Web.Model;
+using GraphiteConsumer.Model;
 
 namespace GraphiteConsumer.Web
 {

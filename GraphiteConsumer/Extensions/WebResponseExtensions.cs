@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Net;
 
-namespace GraphiteConsumer.Web.Extensions
+namespace GraphiteConsumer.Extensions
 {
 	public static class WebResponseExtensions
 	{

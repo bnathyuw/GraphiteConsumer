@@ -1,6 +1,6 @@
 using System;
 
-namespace GraphiteConsumer.Web.Extensions
+namespace GraphiteConsumer.Extensions
 {
 	static internal class CheckString
 	{

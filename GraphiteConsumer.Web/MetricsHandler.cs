@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Web;
-using GraphiteConsumer.Web.Graphite;
-using GraphiteConsumer.Web.Model;
+using GraphiteConsumer.Graphite;
+using GraphiteConsumer.Model;
 
 namespace GraphiteConsumer.Web
 {
@@ -13,7 +13,9 @@ namespace GraphiteConsumer.Web
 			{
 				var requestParams = RequestParams.FromHttpRequest(context.Request);
 
-				var rawData = GraphiteDataRetriever.GetRawData(requestParams);
+				var graphiteParams = requestParams.ToGraphiteParams();
+
+				var rawData = GraphiteDataRetriever.GetRawData(graphiteParams);
 
 				var data = Data.FromRawData(rawData);
 

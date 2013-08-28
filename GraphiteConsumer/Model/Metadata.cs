@@ -1,7 +1,7 @@
 ﻿using System;
-using GraphiteConsumer.Web.Extensions;
+using GraphiteConsumer.Extensions;
 
-namespace GraphiteConsumer.Web.Model
+namespace GraphiteConsumer.Model
 {
 	public class Metadata
 	{

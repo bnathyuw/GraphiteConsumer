@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace GraphiteConsumer.Web.Graphite
+namespace GraphiteConsumer.Graphite
 {
 	public class GraphiteParams
 	{

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GraphiteConsumer.Web.Model
+namespace GraphiteConsumer.Model
 {
 	public class Metric
 	{

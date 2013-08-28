@@ -1,18 +1,15 @@
 ﻿using System.Configuration;
 using System.Net;
-using GraphiteConsumer.Web.Extensions;
-using GraphiteConsumer.Web.Model;
+using GraphiteConsumer.Extensions;
 
-namespace GraphiteConsumer.Web.Graphite
+namespace GraphiteConsumer.Graphite
 {
 	public static class GraphiteDataRetriever
 	{
 		private static readonly string GraphiteServerName = ConfigurationManager.AppSettings["GraphiteServerName"];
 
-		public static string GetRawData(RequestParams requestParams)
+		public static string GetRawData(GraphiteParams graphiteParams)
 		{
-			var graphiteParams = requestParams.ToGraphiteParams();
-
 			var webResponse = CallGraphite(graphiteParams);
 
 			return webResponse.ReadBody();

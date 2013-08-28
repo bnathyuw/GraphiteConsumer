@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using GraphiteConsumer.Web.Extensions;
+using GraphiteConsumer.Extensions;
 
-namespace GraphiteConsumer.Web.Model
+namespace GraphiteConsumer.Model
 {
 	public class DataPoints
 	{
@@ -28,7 +28,7 @@ namespace GraphiteConsumer.Web.Model
 			var sb = new StringBuilder();
 			var places = Math.Ceiling(Math.Log10(_points.Max() ?? 0));
 			var template = string.Format("{{0, {0}}}  ", places);
-			for (var i = _points.Max(); i >= _points.Min(); i--)
+			for (var i = Math.Ceiling(_points.Max() ?? 0); i >= 0; i--)
 			{
 				sb.AppendFormat(template, i);
 				foreach (var point in _points)

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Web;
+using GraphiteConsumer.Graphite;
 using GraphiteConsumer.Web.Exceptions;
-using GraphiteConsumer.Web.Graphite;
 
-namespace GraphiteConsumer.Web.Model
+namespace GraphiteConsumer.Web
 {
 	public class RequestParams
 	{
