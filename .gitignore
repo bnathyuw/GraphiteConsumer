@@ -1,0 +1,13 @@
+_Resharper*
+bin
+obj
+logs
+*.user
+*.suo
+*.cache
+*.docstates
+*.DotSettings*
+*.ncrunch*
+_NCrunch_*
+db/output
+App_Secrets
